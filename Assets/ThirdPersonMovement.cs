@@ -24,11 +24,13 @@ public class ThirdPersonMovement : MonoBehaviour
     private InputAction fire;
     private InputAction jump;
 
+    // Awake is called when the instance is being loaded
     private void Awake()
     {
         spiderControls = new SpiderMovementControls();
     }
 
+    // OnEnable is called when the object becomes enabled and active
     private void OnEnable()
     {
         move = spiderControls.Player.Move;
@@ -43,6 +45,7 @@ public class ThirdPersonMovement : MonoBehaviour
         jump.performed += Jump;
     }
 
+    // OnDisable is called when the object becomes disabled or inactive
     private void OnDisable()
     {
         move.Disable();
