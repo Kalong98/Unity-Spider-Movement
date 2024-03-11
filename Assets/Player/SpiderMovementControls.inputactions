@@ -42,7 +42,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Boost",
+                    "name": "Dash",
                     "type": "Button",
                     "id": "a8f86266-4a56-46c1-8f19-64889b6495db",
                     "expectedControlType": "Button",
@@ -301,7 +301,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "Boost",
+                    "action": "Dash",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -312,7 +312,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "Boost",
+                    "action": "Dash",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
