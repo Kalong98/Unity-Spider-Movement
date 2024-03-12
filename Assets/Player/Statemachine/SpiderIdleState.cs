@@ -30,6 +30,11 @@ public class SpiderIdleState : SpiderBaseState
             player.Fire();
             inputHandler.ResetFireTrigger();
         }
+        if (inputHandler.GetDashTrigger())
+        {
+            // Prevents Dash input from being stored in idle
+            inputHandler.ResetDashTrigger();
+        }
         if (inputHandler.GetJumpTrigger())
         {
             spider.SwitchState(spider.jumpState);
